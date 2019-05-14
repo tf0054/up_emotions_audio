@@ -241,7 +241,7 @@ public class EmoRecService extends ResourceConfig {
 		String finalJSONString = "[";
 		String[] dims = dim.split(",");
 		ArrayList<Classifier> clf = new ArrayList<Classifier>();
-		logger_instance.write(1, "Loading config.json from :" + paths.getVar("REST_OPENSMILE") + "configs.json");
+		logger_instance.write(1, "Loading config.json from :" + paths.getVar("REST_OPENSMILE") + "/configs.json");
 		JSONObject jo = loadJsonObject(paths.getVar("REST_OPENSMILE") + "configs.json");
 		logger_instance.write(1, "JSON is loaded: " + jo.toString());
 		JSONArray ja = jo.getJSONArray("configs");

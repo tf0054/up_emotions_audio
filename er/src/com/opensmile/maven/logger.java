@@ -61,7 +61,10 @@ public class logger {
 			// representation of a date with the defined format.
 			String reportDate = df.format(today);
 			// Print what date is today!
-			F.append(reportDate + " ---- " + s + "\n");
+			//F.append(reportDate + " ---- " + s + "\n");
+System.out.println(s);
+			F.append(" ---- " + s + "\n");
+
 			F.flush();
 		}
 	}
